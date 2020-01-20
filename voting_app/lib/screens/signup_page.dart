@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:voting_app/screens/signup_detail_page.dart';
-
-const buttonColor = Color(0xffC1C1C1);
-const facebookColor = Color(0xff0038FF);
-const kakaoColor = Color(0xffFFF500);
+import '../components/signup_button.dart';
+import 'package:voting_app/consts.dart';
 
 class SignUp extends StatelessWidget {
   @override
@@ -102,41 +100,6 @@ class SignUp extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class SignUpButton extends StatelessWidget {
-  SignUpButton(
-      {@required this.snsTitle, @required this.snsColor, this.onPressed});
-
-  final Color snsColor;
-  final String snsTitle;
-  final Function onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 60.0,
-      margin: EdgeInsets.fromLTRB(20, 5, 20, 11),
-      decoration: BoxDecoration(
-        color: buttonColor,
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      child: FlatButton(
-        onPressed: onPressed,
-        child: Center(
-          child: Text(
-            snsTitle,
-            style: TextStyle(
-              color: snsColor,
-              fontWeight: FontWeight.bold,
-              fontSize: 23,
-            ),
-          ),
         ),
       ),
     );
