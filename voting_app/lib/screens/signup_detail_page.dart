@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:voting_app/screens/signup_page.dart';
 
 const textInputColor = Color(0xffDCDCDC);
 
