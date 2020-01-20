@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:voting_app/screens/poll_page.dart';
 import 'package:voting_app/screens/signup_detail_page.dart';
 import '../components/signup_button.dart';
 import 'package:voting_app/consts.dart';
@@ -50,8 +51,8 @@ class SignUp extends StatelessWidget {
                     endIndent: 30,
                   ),
                   SignUpButton(
-                    snsColor: Colors.black,
-                    snsTitle: '이메일',
+                    textColor: Colors.black,
+                    text: '이메일',
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -85,16 +86,30 @@ class SignUp extends StatelessWidget {
                     endIndent: 30,
                   ),
                   SignUpButton(
-                    snsColor: facebookColor,
-                    snsTitle: 'Facebook',
+                    textColor: kFacebookColor,
+                    text: 'Facebook',
                   ),
                   SignUpButton(
-                    snsColor: Colors.black,
-                    snsTitle: 'Google',
+                    textColor: Colors.black,
+                    text: 'Google',
                   ),
                   SignUpButton(
-                    snsColor: kakaoColor,
-                    snsTitle: 'Kakao',
+                    textColor: kKakaoColor,
+                    text: 'Kakao',
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 1.5,
+                    indent: 30,
+                    endIndent: 30,
+                  ),
+                  SignUpButton(
+                    textColor: Colors.black,
+                    text: '투표 게시물',
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => PollPage()));
+                    },
                   )
                 ],
               ),

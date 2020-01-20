@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:voting_app/consts.dart';
 
 class SignUpButton extends StatelessWidget {
-  SignUpButton(
-      {@required this.snsTitle, @required this.snsColor, this.onPressed});
+  SignUpButton({@required this.text, @required this.textColor, this.onPressed});
 
-  final Color snsColor;
-  final String snsTitle;
+  final Color textColor;
+  final String text;
   final Function onPressed;
 
   @override
@@ -16,16 +15,16 @@ class SignUpButton extends StatelessWidget {
       height: 60.0,
       margin: EdgeInsets.fromLTRB(20, 5, 20, 11),
       decoration: BoxDecoration(
-        color: buttonColor,
+        color: kButtonColor,
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: FlatButton(
         onPressed: onPressed,
         child: Center(
           child: Text(
-            snsTitle,
+            text,
             style: TextStyle(
-              color: snsColor,
+              color: textColor,
               fontWeight: FontWeight.bold,
               fontSize: 23,
             ),
