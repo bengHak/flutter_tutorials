@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:voting_app/signup_detail.dart';
+import 'package:voting_app/screens/signup_detail_page.dart';
+
+const buttonColor = Color(0xffC1C1C1);
+const facebookColor = Color(0xff0038FF);
 
 class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    int buttonColor = 0xffC1C1C1;
-
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -54,7 +55,7 @@ class SignUp extends StatelessWidget {
                     height: 60.0,
                     margin: EdgeInsets.fromLTRB(20, 5, 20, 0),
                     decoration: BoxDecoration(
-                      color: Color(buttonColor),
+                      color: buttonColor,
 //                      border: Border.all(
 //                        color: Colors.grey,
 //                        style: BorderStyle.solid,
@@ -110,7 +111,7 @@ class SignUp extends StatelessWidget {
                     height: 60.0,
                     margin: EdgeInsets.fromLTRB(20, 5, 20, 11),
                     decoration: BoxDecoration(
-                      color: Color(buttonColor),
+                      color: buttonColor,
 //                      border: Border.all(
 //                        color: Colors.grey,
 //                        style: BorderStyle.solid,
@@ -126,7 +127,7 @@ class SignUp extends StatelessWidget {
                             Text(
                               'Facebook',
                               style: TextStyle(
-                                color: Color(0xff0038FF),
+                                color: facebookColor,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18,
                               ),
@@ -149,11 +150,7 @@ class SignUp extends StatelessWidget {
                     height: 60.0,
                     margin: EdgeInsets.fromLTRB(20, 5, 20, 11),
                     decoration: BoxDecoration(
-                      color: Color(buttonColor),
-//                      border: Border.all(
-//                        color: Colors.grey,
-//                        style: BorderStyle.solid,
-//                      ),
+                      color: buttonColor,
                       borderRadius: BorderRadius.circular(15.0),
                     ),
                     child: FlatButton(
@@ -175,7 +172,7 @@ class SignUp extends StatelessWidget {
                     height: 60.0,
                     margin: EdgeInsets.fromLTRB(20, 5, 20, 11),
                     decoration: BoxDecoration(
-                      color: Color(buttonColor),
+                      color: buttonColor,
                       borderRadius: BorderRadius.circular(15.0),
                     ),
                     child: FlatButton(
