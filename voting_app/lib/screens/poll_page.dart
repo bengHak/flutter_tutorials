@@ -82,7 +82,14 @@ class PollPage extends StatelessWidget {
               ],
             ),
             Divider(),
-            Text('투표 항목'),
+            Text(
+              '투표 항목',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.start,
+            ),
             Container(
               child: Column(
                 children: <Widget>[
